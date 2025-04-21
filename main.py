@@ -41,7 +41,7 @@ def calculation_values():
         elif calculation_result >= 40:
             comment="Class 3 obesity"
 
-        result_label.config(text=f"Height: {input_1*100}cm, Weight: {input_2}kg,\n BMI: {calculation_result:.2f} - {comment}") # Label'ı güncelle:
+        result_label.config(text=f"Height: {input_1*100}cm, Weight: {input_2}kg,\n BMI: {calculation_result:.1f} - {comment}") # Label'ı güncelle:
 
     except:
 

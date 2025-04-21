@@ -16,7 +16,7 @@ def calculation_values():
     try:
         input_1=float(input_height.get())/100
         input_2=float(input_weight.get())
-        calculation_result=float(input_2/(input_1**2))
+        calculation_result=(input_2/(input_1**2))
         if calculation_result < 18.5:
             comment="Underweight"
         elif 18.5 <= calculation_result <= 24.9:
@@ -30,7 +30,7 @@ def calculation_values():
         elif calculation_result >= 40:
             comment="Class 3 obesity"
 
-        result_label.config(text=f"Height: {input_1*100}cm, Weight: {input_2}kg,\n BMI: {calculation_result:.2f} - {comment}") # Label'ı güncelle:
+        result_label.config(text=f"Height: {input_1*100}cm, Weight: {input_2}kg,\n BMI: {calculation_result} - {comment}") # Label'ı güncelle:
 
     except:
 
